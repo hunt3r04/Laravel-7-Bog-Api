@@ -7,11 +7,15 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Category;
 use App\Http\Resources\Category as CategoryResource;
-
+/**
+ * @group  Category management
+ *
+ * APIs for managing users
+ */
 class CategoryController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Display a listing of the Categories.
      *
      * @return \Illuminate\Http\Response
      */
@@ -26,7 +30,7 @@ class CategoryController extends Controller
     
 
     /**
-     * Store a newly created resource in storage.
+     * Store a newly created Category in storage.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
@@ -40,7 +44,7 @@ class CategoryController extends Controller
     }
 
     /**
-     * Display the specified resource.
+     * Display the specified Category.
      *
      * @param  \App\Category  $category
      * @return \Illuminate\Http\Response
@@ -70,19 +74,19 @@ class CategoryController extends Controller
     }
 
     /**
-     * Update the specified resource in storage.
+     * Return edit form the specified Category in storage.
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  \App\Category  $category
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Category $category)
+    public function update()
     {
         //
     }
 
     /**
-     * Remove the specified resource from storage.
+     * Remove the specified Category from storage.
      *
      * @param  \App\Category  $category
      * @return \Illuminate\Http\Response

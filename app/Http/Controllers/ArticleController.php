@@ -6,11 +6,15 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Article;
 use App\Http\Resources\Article as ArticleResource;
-
+/**
+ * @group  Article management
+ *
+ * APIs for managing users
+ */
 class ArticleController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Display a listing of the Articles.
      *
      * @return \Illuminate\Http\Response
      */
@@ -26,7 +30,7 @@ class ArticleController extends Controller
     
 
     /**
-     * Store a newly created resource in storage.
+     * Store a newly created Article in storage.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
@@ -43,7 +47,7 @@ class ArticleController extends Controller
     
 
     /**
-     * Display the specified resource.
+     * Display the specified Article.
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
@@ -57,7 +61,7 @@ class ArticleController extends Controller
     }
 
     /**
-     * Show the form for editing the specified resource.
+     * Update the specified resource in storage..
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
@@ -79,19 +83,20 @@ class ArticleController extends Controller
     
 
     /**
-     * Update the specified resource in storage.
+     * Show the form for editing the specified resource
+     * 
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update( $id)
     {
         //
     }
 
     /**
-     * Remove the specified resource from storage.
+     * Remove the specified Article from storage.
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
